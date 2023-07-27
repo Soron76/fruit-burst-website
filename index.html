@@ -17,17 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/4d4545d1fd.js" crossorigin="anonymous"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    backgroundImage: {
-                        'hero-pattern': "url('/images/team.png')",
-                    }
-                }
-            }
-        }
-    </script>
+
 
     <style>
         .font-lato {
@@ -77,83 +67,107 @@
                 </div>
             </div>
         </nav>
-
-        <!-- bannner slider -->
-        <section class=" container mx-auto relative">
-            <div class="carousel  mt-2">
-                <!-- slide 1 -->
+        <section class="container mx-auto relative">
+            <div class="carousel w-full">
                 <div id="slide1" class="carousel-item relative w-full">
-                    <div class="hero min-h-[80vh] rounded-xl " style="background-image: url(./images/banner1.png);">
-                        <div class="hero-overlay bg-opacity-60"></div>
-                        <div class="hero-content text-center text-neutral-content">
-                            <div class="">
-                                <h1 class="mb-5 text-6xl font-bold">Exotic tastes at your <br> doorstep</h1>
-                                <p class="mb-5">We supply highly quality organic products</p>
-                                <button class="btn rounded-lg bg-[#F85559]">Shop Now</button>
+                    <img src="/images/banner1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-20">
+                        <a href="#slide4" class="btn btn-circle text-white border-none bg-[#121212]">❮</a>
+                        <a href="#slide2" class="btn btn-circle text-white border-none bg-[#121212]">❯</a>
+                    </div>
+                    <div
+                        class="absolute flex justify-center items-center text-center h-full w-full z-10 bg-black bg-opacity-50">
+                        <div class="p-8 md:p-16 lg:p-24">
+                            <div class="text-white">
+                                <h1 class="text-2xl md:text-5xl lg:text-7xl font-bold">
+                                    Exotic tastes at your <br />
+                                    doorstep
+                                </h1>
+                                <p class="text-xs my-3 lg:my-8 lg:text-xl">
+                                    We supply highly quality organic products
+                                </p>
+                                <button class="btn btn-success bg-[#F85559] border-none text-white lg:text-xl">
+                                    Shop Now
+                                </button>
                             </div>
                         </div>
                     </div>
-
-
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide4" class="btn btn-circle bg-black text-white">❮</a>
-                        <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
-                    </div>
                 </div>
-                <!-- slide 2 -->
                 <div id="slide2" class="carousel-item relative w-full">
-                    <div class="hero min-h-[80vh] rounded-xl" style="background-image: url(./images/banner2.png);">
-                        <div class="hero-overlay bg-opacity-60"></div>
-                        <div class="hero-content text-center text-neutral-content">
-                            <div class="">
-                                <h1 class="mb-5 text-6xl font-bold">Exotic tastes at your <br> doorstep</h1>
-                                <p class="mb-5">We supply highly quality organic products</p>
-                                <button class="btn rounded-lg bg-[#F85559]">Shop Now</button>
+                    <img src="/images/banner2.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-20">
+                        <a href="#slide1" class="btn btn-circle text-white border-none bg-[#121212]">❮</a>
+                        <a href="#slide3" class="btn btn-circle text-white border-none bg-[#121212]">❯</a>
+                    </div>
+                    <div
+                        class="absolute flex justify-center items-center text-center h-full w-full z-10 bg-black bg-opacity-50">
+                        <div class="p-8 md:p-16 lg:p-24">
+                            <div class="text-white">
+                                <h1 class="text-2xl md:text-5xl lg:text-7xl font-bold">
+                                    Exotic tastes at your <br />
+                                    doorstep
+                                </h1>
+                                <p class="text-xs my-3 lg:my-8 lg:text-xl">
+                                    We supply highly quality organic products
+                                </p>
+                                <button class="btn btn-success bg-[#F85559] border-none text-white lg:text-xl">
+                                    Shop Now
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide1" class="btn btn-circle bg-black">❮</a>
-                        <a href="#slide3" class="btn btn-circle bg-black">❯</a>
-                    </div>
                 </div>
-                <!-- slide 3 -->
                 <div id="slide3" class="carousel-item relative w-full">
-                    <div class="hero min-h-[80vh] rounded-xl" style="background-image: url(./images/banner3.png);">
-                        <div class="hero-overlay bg-opacity-60"></div>
-                        <div class="hero-content text-center text-neutral-content">
-                            <div class="">
-                                <h1 class="mb-5 text-6xl font-bold">Exotic tastes at your <br> doorstep</h1>
-                                <p class="mb-5">We supply highly quality organic products</p>
-                                <button class="btn rounded-lg bg-[#F85559]">Shop Now</button>
+                    <img src="/images/banner3.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-20">
+                        <a href="#slide2" class="btn btn-circle text-white border-none bg-[#121212]">❮</a>
+                        <a href="#slide4" class="btn btn-circle text-white border-none bg-[#121212]">❯</a>
+                    </div>
+                    <div
+                        class="absolute flex justify-center items-center text-center h-full w-full z-10 bg-black bg-opacity-50">
+                        <div class="p-8 md:p-16 lg:p-24">
+                            <div class="text-white">
+                                <h1 class="text-2xl md:text-5xl lg:text-7xl font-bold">
+                                    Exotic tastes at your <br />
+                                    doorstep
+                                </h1>
+                                <p class="text-xs my-3 lg:my-8 lg:text-xl">
+                                    We supply highly quality organic products
+                                </p>
+                                <button class="btn btn-success bg-[#F85559] border-none text-white lg:text-xl">
+                                    Shop Now
+                                </button>
                             </div>
                         </div>
-                    </div>
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide2" class="btn btn-circle bg-black">❮</a>
-                        <a href="#slide4" class="btn btn-circle bg-black">❯</a>
                     </div>
                 </div>
-                <!-- slide 4 -->
                 <div id="slide4" class="carousel-item relative w-full">
-                    <div class="hero min-h-[80vh] rounded-xl" style="background-image: url(./images/banner4.png);">
-                        <div class="hero-overlay bg-opacity-60"></div>
-                        <div class="hero-content text-center text-neutral-content">
-                            <div class="">
-                                <h1 class="mb-5 text-6xl font-bold">Exotic tastes at your <br> doorstep</h1>
-                                <p class="mb-5">We supply highly quality organic products</p>
-                                <button class="btn rounded-lg bg-[#F85559]">Shop Now</button>
+                    <img src="/images/banner4.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-20">
+                        <a href="#slide3" class="btn btn-circle text-white border-none  bg-[#121212]">❮</a>
+                        <a href="#slide1" class="btn btn-circle text-white border-none bg-[#121212]">❯</a>
+                    </div> 
+                    <div
+                        class="absolute flex justify-center items-center text-center h-full w-full z-10 bg-black bg-opacity-50">
+                        <div class="p-8 md:p-16 lg:p-24">
+                            <div class="text-white">
+                                <h1 class="text-2xl md:text-5xl lg:text-7xl font-bold">
+                                    Exotic tastes at your <br />
+                                    doorstep
+                                </h1>
+                                <p class="text-xs my-3 lg:my-8 lg:text-xl">
+                                    We supply highly quality organic products
+                                </p>
+                                <button class="btn btn-success bg-[#F85559] border-none text-white lg:text-xl">
+                                    Shop Now
+                                </button>
                             </div>
                         </div>
-                    </div>
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide3" class="btn btn-circle bg-black">❮</a>
-                        <a href="#slide1" class="btn btn-circle bg-black">❯</a>
                     </div>
                 </div>
             </div>
             <!-- fruits item -->
-            <div class="hidden lg:flex justify-center items-center ">
+            <div class="hidden lg:flex justify-center items-center z-30 ">
                 <div
                     class="flex justify-around items-center  mx-auto w-[1140px] h-[180px] bg-[#fff] rounded-lg shadow-xl text-xl text-[#121212CC] font-medium text-center absolute  -bottom-16">
                     <div>
@@ -179,6 +193,9 @@
                 </div>
             </div>
         </section>
+
+        <!-- bannner slider -->
+       
 
     </header>
     <main class=" mt-32">
